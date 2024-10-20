@@ -9,91 +9,145 @@
 
 body {
 	background-color: $light-white;
-	font-family: Montserrat,sans-serif;
+	font-family: Montserrat, sans-serif;
 }
 
 .nav {
-	background: $gradient-blue;
+	position: fixed;
+	left: 20px;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 1000;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
-    width: 200px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    padding: 20px;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-	color: $pure-white;
-	background-size: 100% 500%;
-	background-position: 0 40%;
-	&:hover{
-		animation: backcolor 20s linear infinite reverse;
-	}
-	@keyframes backcolor {
-		0%{
-			background-position: 0 0%;
-		}
-		100%{
-			background-position: 0 400%;
-		}
-	}
-	&__img {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 20px;
-        img{
-            width: 150px;
-            border-radius: 50%;
-            margin-bottom: 15px;
-        }
-
-		&-desc {
-			text-transform: uppercase;
-			margin: 15px 0px 15px 0px;
-		}
-	}
-
-	&__items{
+	&__items {
 		display: flex;
 		flex-direction: column;
-		align-items: center;
-	
-		
-
-		
+		gap: 20px;
 	}
-
 	&__item {
-		color: $light-white;
-		text-decoration: none;
-		margin-bottom: 20px;
-		font-size: 18px;
-		font-weight: 500;
-		transition: 0.3s;
-		padding: 10px;
-		text-transform: uppercase;
-		&:hover {
-			color: $hover-white;
-			border-bottom: 1px solid white;
-			
-		}
+		width: 50px;
+		height: 50px;
+		background-color: $yellow;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		color: $dark;
+		font-size: 20px;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+		transition: background-color 0.3s, transform 0.3s ease;
 	}
+	&__item:hover {
+		background-color: $yellow-hover;
+		transform: scale(1.1);
+	}
+	// 	background: $gradient-blue;
+	// 	display: flex;
+	// 	flex-direction: column;
+	// 	align-items: center;
+	// 	justify-content: center;
+	//     width: 200px;
+	//     position: fixed;
+	//     top: 0;
+	//     left: 0;
+	//     height: 100vh;
+	//     padding: 20px;
+	//     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+	// 	color: $pure-white;
+	// 	background-size: 100% 500%;
+	// 	background-position: 0 40%;
+	// 	&:hover{
+	// 		animation: backcolor 20s linear infinite reverse;
+	// 	}
+	// 	@keyframes backcolor {
+	// 		0%{
+	// 			background-position: 0 0%;
+	// 		}
+	// 		100%{
+	// 			background-position: 0 400%;
+	// 		}
+	// 	}
+	// 	&__img {
+	//         display: flex;
+	//         flex-direction: column;
+	//         align-items: center;
+	//         margin-bottom: 20px;
+	//         img{
+	//             width: 150px;
+	//             border-radius: 50%;
+	//             margin-bottom: 15px;
+	//         }
 
-	
+	// 		&-desc {
+	// 			text-transform: uppercase;
+	// 			margin: 15px 0px 15px 0px;
+	// 		}
+	// 	}
 
+	// 	&__items{
+	// 		display: flex;
+	// 		flex-direction: column;
+	// 		align-items: center;
+
+	// 	}
+
+	// 	&__item {
+	// 		color: $light-white;
+	// 		text-decoration: none;
+	// 		margin-bottom: 20px;
+	// 		font-size: 18px;
+	// 		font-weight: 500;
+	// 		transition: 0.3s;
+	// 		padding: 10px;
+	// 		text-transform: uppercase;
+	// 		&:hover {
+	// 			color: $hover-white;
+	// 			border-bottom: 1px solid white;
+
+	// 		}
+	// 	}
 }
-.header{
+.header {
 	width: 100%;
 	height: 100vh;
-	background: $bcg-header;
+	background: $dark;
 	color: $pure-white;
 	padding: 15%;
+
+	&__text {
+		font-weight: bold;
+		font-size: 40px;
+	}
+
+	&__icon {
+		background-color: $yellow;
+		width: 70px;
+		height: 70px;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+		transition: background-color 0.3s, transform 0.3s ease;
+		margin-top: 5%;
+	}
+	&__icon-item {
+		color: $dark;
+	}
+	&__icon:hover {
+		background-color: $yellow-hover;
+		transform: scale(1.1);
+	}
+
+	&__h1 {
+		text-transform: uppercase;
+		color: $yellow;
+	}
 }
-.content{
+.content {
 	margin-left: 200px;
 	padding: 20px;
 }
-
