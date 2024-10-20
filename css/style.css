@@ -11,7 +11,7 @@ body {
 }
 
 .nav {
-  background-color: #1755e7;
+  background: linear-gradient(#00bcd4, #e91e63, #3f51b5, #00bcd4);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,6 +24,19 @@ body {
   padding: 20px;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
   color: #fff;
+  background-size: 100% 500%;
+  background-position: 0 40%;
+}
+.nav:hover {
+  animation: backcolor 20s linear infinite reverse;
+}
+@keyframes backcolor {
+  0% {
+    background-position: 0 0%;
+  }
+  100% {
+    background-position: 0 400%;
+  }
 }
 .nav__img {
   display: flex;
@@ -58,6 +71,14 @@ body {
 .nav__item:hover {
   color: #d8d7d7;
   border-bottom: 1px solid white;
+}
+
+.header {
+  width: 100%;
+  height: 100vh;
+  background: #000942;
+  color: #fff;
+  padding: 15%;
 }
 
 .content {
