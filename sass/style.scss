@@ -8,7 +8,7 @@
 }
 
 body {
-	background-color: $light-white;
+	background-color: $dark;
 	font-family: Montserrat, sans-serif;
 }
 
@@ -150,4 +150,27 @@ body {
 .content {
 	margin-left: 200px;
 	padding: 20px;
+	&__info p{
+		margin: 10px 0px 10px 0px;
+	}
+	&__about-me{
+		color: $pure-white;
+		display: flex;
+		flex-direction: row;
+
+
+	}
+	
+	&__h2{
+		color: $yellow;
+	}
+	&__p-about{
+		text-transform: uppercase;
+		font-size: 50px;
+		font-weight: bold;
+	}
+	&__info-p{
+		font-weight: bold;
+	}
+
 }

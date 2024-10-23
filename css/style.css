@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #eee;
+  background-color: #2e2e2e;
   font-family: Montserrat, sans-serif;
 }
 
@@ -82,4 +82,23 @@ body {
 .content {
   margin-left: 200px;
   padding: 20px;
+}
+.content__info p {
+  margin: 10px 0px 10px 0px;
+}
+.content__about-me {
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+}
+.content__h2 {
+  color: #FFFF00;
+}
+.content__p-about {
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: bold;
+}
+.content__info-p {
+  font-weight: bold;
 }/*# sourceMappingURL=style.css.map */
